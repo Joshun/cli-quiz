@@ -2,7 +2,7 @@
 
 ## A simple command-line quiz written in C.
 
-An attempt to produce a simple multiple-choice quiz program in C, reading questions from a file.The question format is:
+An attempt to produce a simple multiple-choice quiz program in C, reading questions from a file. Its small memory footprint makes it ideal for devices such as the Raspberry Pi. The question format is:
 
     total:[total number of questions]
     question1:answerchoice1
