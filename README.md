@@ -14,3 +14,7 @@ The first line contains a 'total' statement followed by the total number of ques
 *This program is* **experimental** *- there may be bugs*.
 
 Also the code needs a bit of tidying up.
+
+To compile, run 'make' in the 'src' folder. Then try out the example quiz with
+
+    ./quiz example-quiz
