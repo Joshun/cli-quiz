@@ -75,7 +75,7 @@ int get_max_length(const char *data, const int numlines)
 
 void read_file(const char *filename, Questiondata *questions)
 {
-	FILE *datafile = fopen(filename, "r");
+	FILE *datafile = fopen(filename, "rb");
 	char *datastore;
 
 	if( datafile == NULL)
