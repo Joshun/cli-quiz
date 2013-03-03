@@ -7,8 +7,6 @@
 
 #include "quiz.h"
 
-//#define MAX_LINE_LENGTH 3000
-
 
 void add_newline(const char *filename)
 {
@@ -173,19 +171,6 @@ void read_file(const char *filename, Questiondata *questions)
 		#endif
 		current_line++;
 
-
 	}
 	
-	ask_questions(questions);
-
-	free(questions->question_answers);
-	free(questions->not_asked);
-	
-	int freecount;
-	for(freecount=0; freecount<questions->numquestions; freecount++)
-	{
-		free(questions->question_text[freecount]);
-	}
-	
-	free(questions->question_text);
 }

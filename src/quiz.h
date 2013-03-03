@@ -8,12 +8,15 @@ typedef struct
 	char *not_asked;
 } Questiondata;
 
+void destroy_questiondata(Questiondata *questions);
+
 /* File I/O functions */
 void add_newline(const char *filename);
 void check_newline(FILE *datafile, const char *filename, char *datastore, long *file_size);
 void read_file(const char *filename, Questiondata *questions);
 int get_max_length(const char *data, const int numlines);
 
+/* Quiz functions */
 void ask_questions(Questiondata *questions);
 int question_not_asked(int question_number, Questiondata *questions);
 int get_random(const int min, const int max);
